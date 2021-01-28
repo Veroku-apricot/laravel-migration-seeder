@@ -1,5 +1,6 @@
 <?php
 
+use App\Trademark;
 use Illuminate\Database\Seeder;
 
 class TrademarkSeeder extends Seeder
@@ -11,6 +12,6 @@ class TrademarkSeeder extends Seeder
      */
     public function run()
     {
-        //
+        factory(Trademark::class, 50)->create();
     }
 }

@@ -2,13 +2,13 @@
 
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 
-use App\Model;
+use App\Trademark;
 use Faker\Generator as Faker;
 
-$factory->define(Model::class, function (Faker $faker) {
+$factory->define(Trademark::class, function (Faker $faker) {
     return [
-      'name' => $faker->name,
+      'name' => $faker->company,
       'logo' => $faker->imageUrl,
-      'date_of_admission' => $faker->randomNumber,
+      'number_of_locations' => $faker->randomNumber,
     ];
 });
